@@ -1,5 +1,9 @@
 
-
+th{
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px 20px;
+    text-align: left;
+}
 a {
     text-decoration: none;
 }
@@ -28,7 +32,7 @@ ul {
     padding: 0;
 }
 body{
-    background-color: #b6f3ef63;
+    background-color: #cbf5f263;
 }
 
 .container {
@@ -140,16 +144,16 @@ body{
  }
 
  .services {
-    padding-top: 60px;
+    padding:60px 0px 0px 0px;
  }
 
- .serv-title {
+ .section-title {
     text-align: center;
     margin-bottom: 40px;
  }
 
 .serv-bgr{
-    background-color: aquamarine;
+    background-color: #afafaa;
     padding: 40px 25px;
     border-radius: 40px;
     margin-bottom: 40px;
@@ -179,4 +183,99 @@ margin-bottom: 16px;
  .card-info{
     padding: 24px;
  }
- 
+
+ .benefits-box{
+    display: flex;
+    flex-wrap: wrap;
+    
+ }
+
+ .benefits-item{
+    flex-basis: calc((100% - 90px) / 4);
+    height: 100%;
+    margin-right: 30px;
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 0px 4px;
+ }
+
+ .benefits-item:last-child{
+    margin-right: 0px;
+ }
+
+ .benefits-img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+ }
+
+ .benefits{
+    padding-top: 60px;
+ }
+
+ .benefits-subtitle{
+     
+     margin-top: 0;
+     margin-bottom: 10px;
+ }
+
+ .benefits-text {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+ } 
+
+ .price{
+    padding-top: 60px;
+ }
+
+ .tbl-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+
+.tbl{
+    margin-bottom: 30px;
+   
+        margin-right: 30px;
+        background: #fcf1f18c;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 0px 4px;
+    
+}
+
+.tbl:last-child{
+    margin-right: 0px;
+}
+/* .tbl-box{
+    margin-top: auto;
+    margin-bottom: auto;
+} */
+.feedback{
+    padding-top: 40px;
+}
+
+.feedback-text{
+    margin-bottom: 50px;
+}
+
+.footer-adress{
+    display: block;
+}
+
+.footer{
+    padding: 60px 0px;
+}
+
+.footer-box{
+    display: flex;
+    align-items: center;
+}
+.footer-btn{
+    display: flex;
+    margin-left: auto;
+}
