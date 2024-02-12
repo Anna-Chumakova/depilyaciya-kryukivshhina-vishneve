@@ -32,7 +32,13 @@ ul {
     padding: 0;
 }
 body{
-    background-color: #cbf5f263;
+    font-family: Roboto, sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    color: #512499;
+    background-color: #fff;
 }
 
 .container {
@@ -44,22 +50,27 @@ body{
 }
 
 .logo-img{
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../img/logoSuga.jpg);
-    border-radius: 50%;
     margin: 15px;
 }
 
 .header-box{
     display: flex;
     align-items: center;
-    
 
 }
 
 .contacts{
-    display: block;
+    font-size: 18px;
+    color: #512499;
+    display: block;  
+}
+
+.contacts:hover,
+.contacts:focus{
+    color: #f043b6;
+}
+.contacts-box{
     margin-left: auto;
-    
 }
 
 .nav-list{
@@ -70,14 +81,21 @@ body{
 
 .nav-list__item{
     margin-right: 50px;
+    font-size: 24px;
+    color: #512499;
 }
 
 .nav-list__item:last-child{
     margin-right: 0px;
 }
 
+.nav-list-link:hover,
+.nav-list-link:focus{
+    color: #f043b6;
+}
+
 .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero\ \(1\).jpg);
     background-color: #afafaa;
     background-repeat: no-repeat;
     background-position: center;
@@ -90,7 +108,19 @@ body{
     margin-right: auto;
 }
 .hero-title {
+    font-size: 28px;
+    font-weight: 700;
     text-transform: uppercase;
+/* text-shadow:
+        0 0 5px #f043b670,
+        0 0 10px #f043b670,
+        0 0 15px #f043b670,
+        0 0 20px #f043b670; */
+        text-shadow:
+                0 0 5px #6d2c5770,
+                0 0 10px #6d2c5770,
+                0 0 15px #6d2c5770,
+                0 0 20px #6d2c5770;
     color: #ffffff;
     margin-top: 0;
     margin-bottom: 40px;
@@ -99,21 +129,26 @@ body{
  .btn {
      font-family: inherit;
      font-weight: 700;
-     font-size: 16px;
+     font-size: 18px;
      line-height: 1.87;
      align-items: center;
      text-align: center;
      letter-spacing: 0.06em;
      color: #ffffff;
-     background-color: #444;
-     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+     background-color: #6d2c57;
+     box-shadow: 0px 6px 6px rgba(0, 0, 0.15, 0.15);
      border-radius: 4px;
      cursor: pointer;
      border: transparent;
  }
 
  .btn-hero {   
-    padding: 8px 32px;
+    padding: 12px 36px;
+ }
+
+ .btn:hover,
+ .btn:focus{
+    background-color: #f043b6;
  }
 
  .box-title {
@@ -146,17 +181,21 @@ body{
  .services {
     padding:60px 0px 0px 0px;
  }
-
+.pink{
+    background-color: #f043b622;
+}
  .section-title {
+    font-family: inherit;
+    font-size: 28px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
     text-align: center;
     margin-bottom: 40px;
  }
 
 .serv-bgr{
-    background-color: #afafaa;
+    
     padding: 40px 25px;
-    border-radius: 40px;
-    margin-bottom: 40px;
 }
 
 .serv-bgr:last-child{
@@ -177,7 +216,9 @@ body{
  }
 
  .card-title{
-margin-bottom: 16px;
+    font-family: inherit;
+    font-size: 24px;
+    margin-bottom: 16px;
  }
 
  .card-info{
@@ -187,7 +228,7 @@ margin-bottom: 16px;
  .benefits-box{
     display: flex;
     flex-wrap: wrap;
-    
+    margin-bottom: 100px;
  }
 
  .benefits-item{
