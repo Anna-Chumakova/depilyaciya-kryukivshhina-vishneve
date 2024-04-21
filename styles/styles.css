@@ -89,7 +89,7 @@ body{
 
 
 .logo-img{
-    margin: 15px;
+    margin: 40px 15px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -240,6 +240,7 @@ body{
      border-radius: 4px;
      cursor: pointer;
      border: transparent;
+    padding: 4px 8px;
  }
 
 .icon-hero {
@@ -314,7 +315,7 @@ body{
 
 .serv-bgr{
     
-    padding: 40px 25px;
+    padding-bottom: 40px;
 }
 
 @media screen and (min-width:768px) {
@@ -342,12 +343,25 @@ body{
  .card-title{
     font-family: inherit;
     font-size: 24px;
+    text-align: center;
     margin-bottom: 16px;
  }
 
  .card-info{
     padding: 24px;
     margin-left: 10px;
+ }
+ .card-text, 
+ .price-text,
+ .profil-text{
+    font-family: Roboto, sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: #512499;
+        text-align: center;
+        margin-bottom: 16px;
  }
 
  .benefits-box{
@@ -369,12 +383,12 @@ body{
 .benefits-item:last-child{
     margin-bottom: 0px;
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width:1200px) {
     .benefits-item {
         flex-basis: calc((100% - 60px) / 3);
         height: 100%;
         margin-right: 30px;
-    }
+    } 
     .benefits-item:last-child {
         margin-right: 0px;
     }
@@ -388,10 +402,17 @@ body{
 }
 
  .benefits, 
- .price {
+ .price,
+ .feedback
+  {
     padding-top: 60px;
+    
  }
-
+.price,
+.feedback {
+    
+    padding-bottom: 60px;
+}
  .benefits-subtitle{
      
      margin-top: 0;
@@ -405,11 +426,12 @@ body{
  } 
  
 
-.price-img{
+.price-img,
+.feedback-img{
     display: block;
     max-width: 100%;
     height: auto;
-    margin-right: 100px;
+    margin-bottom: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 16px 20px rgba(0,
             0,
@@ -422,9 +444,11 @@ body{
     justify-content: space-evenly;
     padding-bottom: 60px;
 }
-.btn-price{
+.btn-price{   
     width: 300px;
 }
+
+
 .feedback{
     padding-top: 40px;
 }
@@ -432,31 +456,51 @@ body{
 .feedback-text{
     margin-bottom: 50px;
 }
-.feedback-img{
-    width: auto;
-    height: 600px;
+
+@media screen and (min-width:768px) {
+    .profil-text{
+        margin-left: 20px;
+    }
 }
+
 .btn-profil{
     margin-bottom: 20px;
 }
+.feedback-btn, 
+.btn-profil{
+    width: 300px;
+}
+
+
+
 .footer-adress{
     display: block;
 }
 
 .footer{
     padding: 30px 0px;
+    text-align: center;
     background: radial-gradient(circle, rgba(0, 0, 0, 0.10407913165266103) 37%, rgba(238, 174, 195, 1) 98%);
 }
 
-.footer-box{
+.footer-btn {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
-.footer-btn{
-    display: flex;
-    margin-left: auto;
-    margin-right: 15px;
+@media screen and (min-width:768px) {
+    .footer-box{
+        display: flex;
+        align-items: center;
+    }
+        .footer-btn {
+            
+            margin-left: auto;
+            margin-right: 15px;
+        }
 }
+
+
 .footer-icon{
     fill: #512499;
     margin-left: 50px;
