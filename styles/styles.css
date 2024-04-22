@@ -510,3 +510,35 @@ body{
 .footer-icon:focus{
     fill: #f043b6;
 }
+
+.go-top {
+    position: fixed;
+    /* фиксированное позиционирование */
+    left: 20px;
+    /* отступ слева 20px */
+    top: 50%;
+    /* выравниваем по центру */
+    transform: translateY(-50%);
+    /* выравниваем по центру */
+    cursor: pointer;
+    /* при наведении меняем курсор */
+    display: none;
+    /* по умолчанию скрываем кнопку */
+    font-size: 20px;
+    color: rgba(0, 51, 153, 0.5);
+    border: 1px solid rgba(247, 145, 216, 0.5);
+    background-color: rgba(247, 34, 194, 0.1);
+    padding: 15px 10px;
+}
+
+/* меняем прозрачность при наведении мышкой */
+.go-top:hover {
+    color: rgba(0, 51, 153, 0.8);
+    border: 1px solid rgba(0, 51, 153, 0.8);
+    background-color: rgba(0, 51, 153, 0.15);
+}
+
+/* модификатор для отображения кнопки */
+.go-top--show {
+    display: block;
+}
